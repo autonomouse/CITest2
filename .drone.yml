@@ -1,5 +1,5 @@
 build:
-  image: node:latest
-  commands:
+  image: dockerfile/nginx
+  script:
     - testci.sh
 
