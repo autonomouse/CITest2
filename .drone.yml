@@ -1,5 +1,4 @@
-build:
-  image: dockerfile/nginx
-  script:
-    - testci.sh
+image: dockerfile/nginx
+script:
+        - echo hello world
 
