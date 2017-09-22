@@ -1,0 +1,16 @@
+build:
+  image: node:latest
+  commands:
+    - testci.sh
+
+publish:
+  docker:
+    registry: creus.codewolf.fr:5000
+    username: fuego
+    password: $$PASSWORD
+    email: alexistacnet@gmail.com
+    repo: lupus/front-web
+    tag: $$BRANCH
+    file: Dockerfile
+    insecure: false
+
